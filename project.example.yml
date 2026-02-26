@@ -1,0 +1,19 @@
+name: Testatus
+options:
+  bundleIdPrefix: com.yourdomain
+targets:
+  Testatus:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources: 
+      - path: TeslaDeliveryApp
+    settings:
+      PRODUCT_NAME: Testatus
+      PRODUCT_BUNDLE_IDENTIFIER: com.yourdomain.testatus
+      INFOPLIST_FILE: TeslaDeliveryApp/Info.plist
+      DEVELOPMENT_TEAM: "YOUR_10_CHAR_TEAM_ID"
+      CODE_SIGN_STYLE: Automatic
+      SWIFT_VERSION: "5.7"
+      MARKETING_VERSION: "1.0"
+      CURRENT_PROJECT_VERSION: "1"
